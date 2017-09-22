@@ -1,0 +1,51 @@
+{
+  "name": "omasn/decaptcha-bundle",
+  "description": "Symfony Decaptcha bundle, распознавание капч для всех популярных сервисов rucaptcha.com, 2captcha.com, pixodrom.com, captcha24.com, socialink.ru, anti-captcha.com",
+  "version": "1.0.0",
+  "type" : "symfony-bundle",
+  "keywords": [
+    "symfony",
+    "decaptcha",
+    "bundle",
+    "captcha",
+    "recognition",
+    "rucaptcha.com",
+    "2captcha.com",
+    "pixodrom.com",
+    "captcha24.com",
+    "socialink.ru",
+    "rucaptcha",
+    "2captcha",
+    "pixodrom",
+    "captcha24",
+    "socialink",
+    "anti-captcha.com",
+    "anti-captcha"
+  ],
+  "authors" : [{
+    "name" : "Omasn Hawk",
+    "email" : "omasn@yandex.ru"
+  }],
+  "homepage": "http://bong.run/",
+  "type": "project",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {
+    "jumper423/decaptcha": "2.*",
+    "php": "^5.5.9 || ^7.0",
+    "symfony/form": "^2.7 || ^3.0",
+    "symfony/framework-bundle": "^2.7 || ^3.0",
+    "symfony/security-bundle": "^2.7 || ^3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8.30"
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "autoload": {
+    "psr-4": {
+      "Omasn\\DecaptchaBundle\\": ""
+    }
+  }
+}

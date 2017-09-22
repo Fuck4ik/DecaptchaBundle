@@ -1,0 +1,4 @@
+services:
+    decaptcha.ru_captcha:
+        class: jumper423\decaptcha\services\RuCaptcha
+        arguments: ["%omasn_decaptcha.action_field_key%"]
