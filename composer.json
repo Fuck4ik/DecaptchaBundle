@@ -40,6 +40,10 @@
   "require-dev": {
     "phpunit/phpunit": "^4.8.30"
   },
+  "repositories" : [{
+    "type" : "vcs",
+    "url" : "https://github.com/Fuck4ik/DecaptchaBundle.git"
+  }],
   "config": {
     "process-timeout": 1800
   },
