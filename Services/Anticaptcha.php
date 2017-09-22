@@ -4,7 +4,7 @@ namespace Omasn\DecaptchaBundle\Services;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-class RuCaptcha extends \jumper423\decaptcha\services\RuCaptcha
+class Anticaptcha extends \jumper423\decaptcha\services\Anticaptcha
 {
     /**
      * RuCaptcha constructor.
@@ -15,15 +15,13 @@ class RuCaptcha extends \jumper423\decaptcha\services\RuCaptcha
     public function __construct($params, $oContainer)
     {
         parent::__construct($params);
-        $this->setParams([
-            self::ACTION_FIELD_KEY => $oContainer->getParameter('omasn_decaptcha.ru_captcha.action_field_key'),
-        ]);
+        $this->setParam(self::ACTION_FIELD_KEY, $oContainer->getParameter('omasn_decaptcha.anticaptcha.action_field_key'));
 
     }
 
     public function init()
     {
         parent::init();
-        $this->actions[static::ACTION_RECOGNIZE][static::ACTION_FIELDS][static::ACTION_FIELD_SOFT_ID][static::PARAM_SLUG_DEFAULT] = 1709;
+        $this->actions[static::ACTION_RECOGNIZE][static::ACTION_FIELDS][static::ACTION_FIELD_SOFT_ID][static::PARAM_SLUG_DEFAULT] = 825;
     }
 }

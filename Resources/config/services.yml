@@ -1,4 +1,68 @@
 services:
+    decaptcha.anticaptcha:
+        class: Omasn\DecaptchaBundle\Services\Anticaptcha
+        arguments: ["%omasn_decaptcha.anticaptcha.action_field_key%", '@service_container']
+
+    decaptcha.anticaptcha_re_captcha:
+        class: Omasn\DecaptchaBundle\Services\AnticaptchaReCaptcha
+        arguments: ["%omasn_decaptcha.anticaptcha.action_field_key%", '@service_container']
+
+    decaptcha.anticaptcha_re_captcha_proxeless:
+        class: Omasn\DecaptchaBundle\Services\AnticaptchaReCaptchaProxeless
+        arguments: ["%omasn_decaptcha.anticaptcha.action_field_key%", '@service_container']
+
+    decaptcha.captcha_24:
+        class: Omasn\DecaptchaBundle\Services\Captcha24
+        arguments: ["%omasn_decaptcha.captcha_24.action_field_key%", '@service_container']
+
+    decaptcha.pixodrom:
+        class: Omasn\DecaptchaBundle\Services\Pixodrom
+        arguments: ["%omasn_decaptcha.pixodrom.action_field_key%", '@service_container']
+
+    decaptcha.ripcaptcha:
+        class: Omasn\DecaptchaBundle\Services\Ripcaptcha
+        arguments: ["%omasn_decaptcha.ripcaptcha.action_field_key%", '@service_container']
+
     decaptcha.ru_captcha:
-        class: jumper423\decaptcha\services\RuCaptcha
-        arguments: ["%omasn_decaptcha.action_field_key%"]
+        class: Omasn\DecaptchaBundle\Services\RuCaptcha
+        arguments: ["%omasn_decaptcha.ru_captcha.action_field_key%", '@service_container']
+
+    decaptcha.ru_captcha_click:
+        class: Omasn\DecaptchaBundle\Services\RuCaptchaClick
+        arguments: ["%omasn_decaptcha.ru_captcha.action_field_key%", '@service_container']
+
+    decaptcha.ru_captcha_grid:
+        class: Omasn\DecaptchaBundle\Services\RuCaptchaGrid
+        arguments: ["%omasn_decaptcha.ru_captcha.action_field_key%", '@service_container']
+
+    decaptcha.ru_captcha_instruction:
+        class: Omasn\DecaptchaBundle\Services\RuCaptchaInstruction
+        arguments: ["%omasn_decaptcha.ru_captcha.action_field_key%", '@service_container']
+
+    decaptcha.ru_captcha_re_captcha:
+        class: Omasn\DecaptchaBundle\Services\RuCaptchaReCaptcha
+        arguments: ["%omasn_decaptcha.ru_captcha.action_field_key%", '@service_container']
+
+    decaptcha.socialink:
+        class: Omasn\DecaptchaBundle\Services\Socialink
+        arguments: ["%omasn_decaptcha.socialink.action_field_key%", '@service_container']
+
+    decaptcha.two_captcha:
+        class: Omasn\DecaptchaBundle\Services\TwoCaptcha
+        arguments: ["%omasn_decaptcha.two_captcha.action_field_key%", '@service_container']
+
+    decaptcha.two_captcha_click:
+        class: Omasn\DecaptchaBundle\Services\TwoCaptchaClick
+        arguments: ["%omasn_decaptcha.two_captcha.action_field_key%", '@service_container']
+
+    decaptcha.two_captcha_grid:
+        class: Omasn\DecaptchaBundle\Services\TwoCaptchaGrid
+        arguments: ["%omasn_decaptcha.two_captcha.action_field_key%", '@service_container']
+
+    decaptcha.two_captcha_instruction:
+        class: Omasn\DecaptchaBundle\Services\TwoCaptchaInstruction
+        arguments: ["%omasn_decaptcha.two_captcha.action_field_key%", '@service_container']
+
+    decaptcha.two_captcha_re_captcha:
+        class: Omasn\DecaptchaBundle\Services\TwoCaptchaReCaptcha
+        arguments: ["%omasn_decaptcha.two_captcha.action_field_key%", '@service_container']
