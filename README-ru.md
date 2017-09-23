@@ -75,7 +75,7 @@ omasn_decaptcha:
 
 # Использование
 
-Небольшой пример того как на основе сервиса RuCaptcha получить ваш текущий баланс в системе и по ссылке на распознать капчу.
+Небольшой пример того как на основе сервиса RuCaptcha получить ваш текущий баланс в системе и по имеющемуся url распознать капчу.
 
 ### Пример в экшене контролллера
 
@@ -95,6 +95,26 @@ public function indexAction()
     } else {
         $error = $oReCapcha->getError();
     }
+}
+...
+```
+
+### Применение дополнительной конфигурации
+
+Добавим в конфиг RuCaptcha дополнительные параметры "[Описание полей](https://github.com/jumper423/decaptcha/blob/master/docs/RuCaptchaInstruction-ru.md#%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%BB%D0%B5%D0%B9)"
+
+```php
+// src/AppBundle/Controller/DefaultController.php
+
+use Omasn\DecaptchaBundle\Services\RuCaptcha;
+
+...
+public function indexAction()
+{
+    $oReCapcha = $this->get('decaptcha.ru_captcha');
+    $oReCapcha->setParams([
+        RuCaptcha::ACTION_FIELD_FILE => '/file/to/path',
+    ]);
 }
 ...
 ```
