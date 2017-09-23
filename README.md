@@ -76,6 +76,7 @@ omasn_decaptcha:
 # Usage
 
 A small example of how on the basis of the RuCaptcha service to get your current balance in the system and by the available url to recognize the captcha.
+For more information on usage, see [Documentation](https://github.com/jumper423/decaptcha)
 
 ### Example in the controller action
 
