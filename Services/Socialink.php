@@ -15,7 +15,7 @@ class Socialink extends \jumper423\decaptcha\services\Socialink
     public function __construct($params, $oContainer)
     {
         parent::__construct($params);
-        $this->setParam(self::ACTION_FIELD_KEY, $oContainer->getParameter('omasn_decaptcha.socialink.action_field_key'));
+        $this->setParam(self::ACTION_FIELD_KEY, $oContainer->getParameter('omasn_decaptcha.socialink.api_key'));
 
     }
 }

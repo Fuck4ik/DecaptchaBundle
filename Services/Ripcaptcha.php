@@ -15,7 +15,7 @@ class Ripcaptcha extends \jumper423\decaptcha\services\Ripcaptcha
     public function __construct($params, $oContainer)
     {
         parent::__construct($params);
-        $this->setParam(self::ACTION_FIELD_KEY, $oContainer->getParameter('omasn_decaptcha.ripcaptcha.action_field_key'));
+        $this->setParam(self::ACTION_FIELD_KEY, $oContainer->getParameter('omasn_decaptcha.ripcaptcha.api_key'));
 
     }
 }

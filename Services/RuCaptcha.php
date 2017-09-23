@@ -16,7 +16,7 @@ class RuCaptcha extends \jumper423\decaptcha\services\RuCaptcha
     {
         parent::__construct($params);
         $this->setParams([
-            self::ACTION_FIELD_KEY => $oContainer->getParameter('omasn_decaptcha.ru_captcha.action_field_key'),
+            self::ACTION_FIELD_KEY => $oContainer->getParameter('omasn_decaptcha.ru_captcha.api_key'),
         ]);
 
     }

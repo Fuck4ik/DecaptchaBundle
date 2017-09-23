@@ -15,7 +15,7 @@ class TwoCaptcha extends \jumper423\decaptcha\services\TwoCaptcha
     public function __construct($params, $oContainer)
     {
         parent::__construct($params);
-        $this->setParam(self::ACTION_FIELD_KEY, $oContainer->getParameter('omasn_decaptcha.two_captcha.action_field_key'));
+        $this->setParam(self::ACTION_FIELD_KEY, $oContainer->getParameter('omasn_decaptcha.two_captcha.api_key'));
 
     }
 }

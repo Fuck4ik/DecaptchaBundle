@@ -15,7 +15,7 @@ class AnticaptchaReCaptchaProxeless extends \jumper423\decaptcha\services\Antica
     public function __construct($params, $oContainer)
     {
         parent::__construct($params);
-        $this->setParam(self::ACTION_FIELD_KEY, $oContainer->getParameter('omasn_decaptcha.anticaptcha.action_field_key'));
+        $this->setParam(self::ACTION_FIELD_KEY, $oContainer->getParameter('omasn_decaptcha.anticaptcha.api_key'));
 
     }
 }

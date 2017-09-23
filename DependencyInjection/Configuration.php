@@ -22,62 +22,67 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('omasn_decaptcha');
-        
-        
 
         $rootNode
             ->children()
                 ->arrayNode('anticaptcha')
+                ->addDefaultsIfNotSet()
                 ->children()
-                    ->scalarNode('action_field_key')->isRequired()->cannotBeEmpty()->end()
+                    ->scalarNode('api_key')->defaultNull()->end()
                 ->end()
             ->end()
         ;
         $rootNode
             ->children()
                 ->arrayNode('captcha_24')
+                ->addDefaultsIfNotSet()
                 ->children()
-                    ->scalarNode('action_field_key')->isRequired()->cannotBeEmpty()->end()
+                    ->scalarNode('api_key')->defaultNull()->end()
                 ->end()
             ->end()
         ;
         $rootNode
             ->children()
                 ->arrayNode('pixodrom')
+                ->addDefaultsIfNotSet()
                 ->children()
-                    ->scalarNode('action_field_key')->isRequired()->cannotBeEmpty()->end()
+                    ->scalarNode('api_key')->defaultNull()->end()
                 ->end()
             ->end()
         ;
         $rootNode
             ->children()
                 ->arrayNode('ripcaptcha')
+                ->addDefaultsIfNotSet()
                 ->children()
-                    ->scalarNode('action_field_key')->isRequired()->cannotBeEmpty()->end()
+                    ->scalarNode('api_key')->defaultNull()->end()
                 ->end()
             ->end()
         ;
         $rootNode
             ->children()
                 ->arrayNode('ru_captcha')
+                ->addDefaultsIfNotSet()
                 ->children()
-                    ->scalarNode('action_field_key')->isRequired()->cannotBeEmpty()->end()
+                    ->scalarNode('api_key')->defaultNull()->end()
                 ->end()
             ->end()
         ;
         $rootNode
             ->children()
                 ->arrayNode('socialink')
+                ->addDefaultsIfNotSet()
                 ->children()
-                    ->scalarNode('action_field_key')->isRequired()->cannotBeEmpty()->end()
+                    ->scalarNode('api_key')->defaultNull()->end()
                 ->end()
             ->end()
         ;
         $rootNode
             ->children()
                 ->arrayNode('two_captcha')
+                ->addDefaultsIfNotSet()
                 ->children()
-                    ->scalarNode('action_field_key')->isRequired()->cannotBeEmpty()->end()
+                    ->scalarNode('api_key')->defaultNull()->end()
                 ->end()
             ->end()
         ;
