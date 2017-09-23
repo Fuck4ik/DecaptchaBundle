@@ -2,7 +2,7 @@
 
 Symfony Decaptcha bundle.
 
-Package created to standardize all services for solving captcha. Each service has its own features and now You will have to look at the documentation for the specific service to do everything right. The package covers the entire functionality services. If You will be something lacking or suggestions, I'll be glad to hear them. Made on the basis of https://github.com/jumper423/decaptcha
+The package is created for standardization of all services on guessing Captcha. Each service has its own characteristics and now you do not need to operate with several packages. It is enough only to get acquainted with the available documentation in order to customize everyone. The package covers all the functionality of the services. If you have a lack of available functionality, I will be glad to hear all the suggestions. Bundle is implemented on the basis of https://github.com/jumper423/decaptcha
 
 ### Choose Language
 + [Russian](./README-ru.md)
