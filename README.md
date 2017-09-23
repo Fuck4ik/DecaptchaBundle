@@ -2,7 +2,7 @@
 
 Symfony Decaptcha bundle.
 
-The package is created for standardization of all services on guessing Captcha. Each service has its own characteristics and now you do not need to operate with several packages. It is enough only to get acquainted with the available documentation in order to customize everyone. The package covers all the functionality of the services. If you have a lack of available functionality, I will be glad to hear all the suggestions. Bundle is implemented on the basis of https://github.com/jumper423/decaptcha
+The package is created for standardization of all services on guessing Captcha. Each service has its own characteristics and now you do not need to operate a few packages. It is enough only to familiarize with the available documentation in order to customize each. The package covers all the functionality of the services. If you do not have enough functionality, I'll be happy to hear all the suggestions. Bundle is implemented on the basis of https://github.com/jumper423/decaptcha
 
 ### Choose Language
 + [Russian](./README-ru.md)
@@ -35,7 +35,7 @@ composer require omasn/decaptcha-bundle "*"
 ```
 or add
 ```json
-"omasn/decaptcha-bundle": "dev-master"
+"omasn/decaptcha-bundle": "1.1.*"
 ```
 in file `composer.json`.
 
