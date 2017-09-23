@@ -1,17 +1,19 @@
 # DecaptchaBundle
-Symfony Decaptcha bundle. Made on the basis of https://github.com/jumper423/decaptcha
-Package created to standardize all services for solving captcha. Each service has its own features and now You will have to look at the documentation for the specific service to do everything right. The package covers the entire functionality services. If You will be something lacking or suggestions, I'll be glad to hear them.
 
-###Choose Language
+Symfony Decaptcha bundle.
+
+Package created to standardize all services for solving captcha. Each service has its own features and now You will have to look at the documentation for the specific service to do everything right. The package covers the entire functionality services. If You will be something lacking or suggestions, I'll be glad to hear them. Made on the basis of https://github.com/jumper423/decaptcha
+
+### Choose Language
 + [Russian](./README-ru.md)
 
-###Menu
+### Menu
 + [Documentation](https://github.com/jumper423/decaptcha)
 + [Services](#Services)
 + [Installation](#Installation)
 + [Usage](#Usage)
 
-#Services
+# Services
 Captcha Recognition for all popular services
 
 + [RuCaptcha](https://rucaptcha.com?from=4461711)
@@ -21,7 +23,7 @@ Captcha Recognition for all popular services
 + [Pixodrom](http://pixodrom.com/)
 + [R.I.P. Captcha](http://ripcaptcha.com/)
 
-#Installation
+# Installation
 
 ## Get the bundle
 
@@ -49,7 +51,7 @@ public function registerBundles() {
 	...
 }
 ```
-##Configuration bundle
+## Configuration bundle
 Configure api_key for those Captcha Recognition services that you want to use.
 
 ```yaml
@@ -71,7 +73,7 @@ omasn_decaptcha:
         api_key: '%api_key%'
 ```
 
-#Usage
+# Usage
 
 A small example of how on the basis of RuCaptcha service to get your current balance in the system and the link to recognize the captcha.
 
