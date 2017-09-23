@@ -1,7 +1,6 @@
 {
   "name": "omasn/decaptcha-bundle",
   "description": "Symfony Decaptcha bundle, распознавание капч для всех популярных сервисов rucaptcha.com, 2captcha.com, pixodrom.com, captcha24.com, socialink.ru, anti-captcha.com",
-  "version": "1.0.0",
   "type" : "symfony-bundle",
   "keywords": [
     "symfony",
